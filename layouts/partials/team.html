@@ -1,0 +1,30 @@
+<section id="team">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        {{ with .Site.Params.team.title }}
+            <h2 class="subtitle text-center">{{ . }}</h2>
+        {{ end }}
+      </div>
+      <div class="col-lg-12 d-flex flex-wrap justify-content-center">
+      {{ range $index, $element:= where .Site.Data.team "featured" true }}
+        <div class="col-md-3 col-sm-6">
+          {{ $delay := mul $index 300 }}
+          <div class="team-member" data-aos="fade-left" data-aos-delay="{{ $delay }}">
+            {{ with .image }}
+                <div class="team-img">
+                <img src="{{ . | absURL }}" class="team-pic" alt="team-member" />
+                </div>
+            {{ end }} {{ with .name }}
+                <h3 class="team_name">{{ . }}</h3>
+            {{ end }} {{ with .title }}
+                <p class="team_designation">{{ . }}</p>
+            {{ end }}
+            <!-- {{ with .summary }}<p class="team_text">{{ . | safeHTML }}</p>{{ end }} -->
+          </div>
+        </div>
+      {{ end }}
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,14 @@
+{{ define "main" }}
+
+{{ partial "intro-banner.html" . }}
+
+{{ if .Site.Params.homeAboutEnable }}
+    {{ partial "about.html" . }}
+{{ end }}
+
+{{ if .Site.Params.homeTeamEnable }}
+    {{ partial "team.html" . }}
+{{ end }}
+
+
+{{ end }}

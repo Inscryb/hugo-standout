@@ -1,0 +1,203 @@
+.top-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  color: #fff;
+  transition: all 0.2s ease-out 0s;
+  padding: 5px 0;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid #dedede;
+  z-index: 10;
+}
+
+.top-bar.animated-header {
+  padding: 20px 0;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: none;
+}
+
+.navbar {
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.navbar .nav-item .nav-link {
+  color: #444 !important;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.3s all;
+  text-transform: uppercase;
+  padding: 5px 15px;
+  display: block;
+}
+
+.navbar .nav-item .nav-link:hover {
+  color: #02bdd5 !important;
+}
+
+.navbar .nav-item:last-child .nav-link {
+  padding-right: 0;
+}
+
+#footer {
+  background: #fff;
+  padding: 25px 0;
+  color: #555;
+}
+
+#footer .copyright {
+  font-size: 13px;
+  margin-bottom: 0;
+}
+
+#footer .copyright a {
+  color: #02bdd5;
+}
+
+#footer .social {
+  text-align: right;
+  margin-bottom: 0;
+}
+
+#footer .social li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+#footer .social li a {
+  font-size: 22px;
+  color: #02bdd5;
+}
+
+ul.social-icons {
+  height: auto;
+  overflow: hidden;
+  list-style: none !important;
+  margin-bottom: 10px;
+}
+
+ul.social-icons li {
+  float: none;
+  display: inline-block;
+  height: 36px;
+}
+
+#copyright a:hover,
+#copyright nav .menu li a:hover {
+  color: #e4e4e4 !important;
+}
+
+#copyright a {
+  text-decoration: none;
+}
+
+#copyright a:hover {
+  text-decoration: none;
+}
+
+#standout-intro-banner {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 230px 0;
+  color: #fff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+#standout-intro-banner:before {
+  content: '';
+  z-index: 9;
+  background: rgba(255, 255, 255, 0.50);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#standout-intro-banner .block {
+  position: relative;
+  z-index: 9;
+}
+
+#standout-intro-banner h1 {
+  font-size: 40px;
+  line-height: 50px;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+#standout-intro-banner h2 {
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 38px;
+  line-height: 27px;
+  text-transform: uppercase;
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  margin-top: 25px;
+}
+
+#standout-about {
+  padding: 110px 0;
+}
+
+#standout-about .block {
+  padding: 20px 30px 0 30px;
+}
+
+
+#team {
+  margin: 50px 0;
+}
+
+.team-member {
+  margin-top: 30px;
+}
+
+.team-member:hover .team-img img {
+  opacity: .8;
+}
+
+.team-member .team-img {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.team-member .team-img .team-pic {
+  width: 100%;
+  max-width: 250px;
+}
+
+.team-member .team_designation {
+  font-size: 13px;
+}
+
+.team-member h3 {
+  color: #02bdd5;
+  margin-bottom: 0;
+  font-size: 20px;
+}
+
+.team-member p {
+  font-size: 14px;
+}
+
+.team-member .social-icons a {
+  background: #02bdd5;
+  color: #fff;
+  padding: 4px 8px;
+  display: inline-block;
+  font-size: 15px;
+}
+
+.team-member .social-icons .facebook {
+  padding: 4px 12px;
+}

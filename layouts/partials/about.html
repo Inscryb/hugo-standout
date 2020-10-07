@@ -1,0 +1,20 @@
+<section id="standout-about">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="block" data-aos="fade-right" data-aos-delay="150" data-aos-delay="100">
+          {{ with .Site.Data.about.title }}
+            <h2>{{ . }}</h2>
+          {{ end }} {{ with .Site.Data.about.content }}
+            <p>{{ . | safeHTML }}</p>
+          {{ end }}
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="block" data-aos="fade-in" data-aos-delay="150">
+          {{ with .Site.Data.about.image }}<img src="{{ . | absURL }}" alt="about-image" />{{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

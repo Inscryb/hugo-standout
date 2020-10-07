@@ -1,0 +1,30 @@
+<footer id="footer">
+    <div class="container">
+        <div class="row content-justify-between">
+            <div class="col-md-8 col-12 text-center text-lg-left text-md-left">
+                <p class="copyright">Copyright:
+                    <span>
+                        <script>document.write(new Date().getFullYear())</script>
+                    </span> Design and Developed by
+                    <a href="http://www.inscryb.com" target="_blank">Inscryb</a>.
+                    <br> Get more template or build a new site.
+                </p>
+            </div>
+            <div class="col-md-4 col-12">
+                {{ "<!-- Social Media -->" | safeHTML }}
+                <ul class="social text-center text-md-right text-lg-right">
+                    {{ range .Site.Params.socialIcon }}
+                    <li><a href="{{ .url | safeURL }}"><i class="{{ .icon }}"></i></a></li>
+                    {{ end }}
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="{{ `js/jquery-3.5.1.slim.min.js` | absURL }}"></script>
+<script src="{{ `js/popper.min.js` | absURL }}"></script>
+<script src="{{ `js/bootstrap.min.js` | absURL }}"></script>
+<script src="{{ `js/aos.js` | absURL }}"></script>
+<script src="{{ `js/main.js` | absURL }}"></script>
+
