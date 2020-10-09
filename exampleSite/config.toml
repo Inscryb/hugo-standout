@@ -20,22 +20,19 @@ name    = "Gallery"
 url     = "gallery"
 weight  = 4
 [[menu.main]]
-name    = "Calendar"
-url     = "calendar"
+name    = "FAQ"
+url     = "faq"
 weight  = 5
 [[menu.main]]
 name    = "Blog"
-url     = "blog"
+url     = "posts"
 weight  = 6
-[[menu.main]]
-name    = "Contact"
-url     = "contact"
-weight  = 7
+
 
 # Site Params
 [params]
 home = "Home"
-dateFormat = "6 January 2006"
+date_formata = "January 1, 2006"
 
 # Meta data
 description = "Airspace Hugo theme"

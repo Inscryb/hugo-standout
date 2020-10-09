@@ -42,6 +42,10 @@
   padding-right: 0;
 }
 
+.page {
+  margin-top: 120px;
+}
+
 #footer {
   background: #fff;
   padding: 25px 0;
@@ -103,10 +107,13 @@ ul.social-icons li {
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
-  padding: 230px 0;
   color: #fff;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
   position: relative;
+  height: 100vh;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
 }
 
 #standout-intro-banner:before {
@@ -146,7 +153,7 @@ ul.social-icons li {
 }
 
 #standout-about {
-  padding: 110px 0;
+  padding: 50px 0;
 }
 
 #standout-about .block {
@@ -155,7 +162,7 @@ ul.social-icons li {
 
 
 #team {
-  margin: 50px 0;
+  margin: 40px 0;
 }
 
 .team-member {
@@ -181,7 +188,7 @@ ul.social-icons li {
 }
 
 .team-member h3 {
-  color: #02bdd5;
+  /* color: #02bdd5; */
   margin-bottom: 0;
   font-size: 20px;
 }
